@@ -48,10 +48,11 @@ It takes the content from 'src/rndm-color.js' saves the result to 'dest/crush.mi
 ```js
 grunt.initConfig({
   jscrush: {
-    options: {},
-    files: {
-      'dest/crush.min.js': ['src/rndm-color.js'],
-    },
+    dist:{
+      files: {
+        'dest/crush.min.js': ['src/rndm-color.js'],
+      }
+    }
   },
 })
 ```
